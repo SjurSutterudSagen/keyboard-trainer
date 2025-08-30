@@ -1,4 +1,4 @@
-import { KeymapDefinition } from '../types/keyboard';
+import { KeymapDefinition, KeyDefinition } from '../types/keyboard';
 
 // QWERTY keymap (standard US)
 const qwertyKeymap: KeymapDefinition = {
@@ -268,7 +268,7 @@ export const getDefaultKeymap = (): KeymapDefinition => {
 };
 
 // Function to apply keymap to a key definition
-export const applyKeymapToKey = (keyDef: any, keymap: KeymapDefinition, isShiftPressed = false): any => {
+export const applyKeymapToKey = (keyDef: KeyDefinition, keymap: KeymapDefinition, isShiftPressed = false): KeyDefinition => {
   const mapping = keymap.mapping[keyDef.code];
   if (mapping) {
     return {

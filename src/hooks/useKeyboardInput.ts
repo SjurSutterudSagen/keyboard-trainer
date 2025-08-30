@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 
-import { KeyboardState, PressedKey } from '../types/keyboard';
+import { KeyboardState } from '../types/keyboard';
 
 export const useKeyboardInput = () => {
   const [keyboardState, setKeyboardState] = useState<KeyboardState>({

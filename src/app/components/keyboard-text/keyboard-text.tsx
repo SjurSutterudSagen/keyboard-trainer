@@ -112,7 +112,7 @@ export function KeyboardText() {
           <div className="min-h-[2.5rem] p-3 bg-gray-50 border border-gray-200 rounded-lg">
             {keyboardState.keyHistory.length > 0 ? (
               <div className="flex flex-wrap gap-2">
-                {formatKeyHistory().map((pressedKey, index) => (
+                {formatKeyHistory().map((pressedKey) => (
                   <span
                     key={`${pressedKey.code}-${pressedKey.timestamp}`}
                     className={`px-2 py-1 text-sm rounded font-mono transition-all duration-300 ${
