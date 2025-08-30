@@ -1,32 +1,50 @@
 import { render, screen } from "@testing-library/react";
+import { vi } from 'vitest';
 
 import { KeyboardTester } from "./keyboard-tester";
 
+// Mock the hook
+vi.mock('../../../hooks/useKeyboardInput', () => ({
+  useKeyboardInput: () => ({
+    keyboardState: {
+      pressedKeys: new Set(),
+      keyHistory: [],
+      currentLayout: 'standard',
+    },
+    setCurrentLayout: vi.fn(),
+    clearHistory: vi.fn(),
+  }),
+}));
+
 test("keyboard tester renders correctly", () => {
-    render(<KeyboardTester />);
+  render(<KeyboardTester />);
 
-    // Check that both child components are rendered
-    const keyboardViewer = screen.getByText("Keyboard Viewer");
-    const keyboardText = screen.getByText("Keyboard Text");
-
-    expect(keyboardViewer).toBeDefined();
-    expect(keyboardViewer).toBeInTheDocument();
-    expect(keyboardText).toBeDefined();
-    expect(keyboardText).toBeInTheDocument();
+  // Check that the main title is rendered  
+  const title = screen.getByText("Keyboard Tester");
+  
+  expect(title).toBeDefined();
+  expect(title).toBeInTheDocument();
 });
 
 test("keyboard tester renders both child components", () => {
-    render(<KeyboardTester />);
-
-    expect(screen.getByText("Keyboard Viewer")).toBeInTheDocument();
-    expect(screen.getByText("Keyboard Text")).toBeInTheDocument();
+  render(<KeyboardTester />);
+  
+  expect(screen.getByRole("heading", { name: "Standard QWERTY" })).toBeInTheDocument(); // From KeyboardViewer
+  expect(screen.getByRole("heading", { name: "Typing Area" })).toBeInTheDocument(); // From KeyboardText
 });
 
-test("keyboard tester renders components in correct order", () => {
-    render(<KeyboardTester />);
+test("keyboard tester shows description", () => {
+  render(<KeyboardTester />);
+  
+  const description = screen.getByText(/Test your keyboard with visual feedback/);
+  
+  expect(description).toBeInTheDocument();
+});
 
-    const elements = screen.getAllByText(/Keyboard (Viewer|Text)/);
-    expect(elements).toHaveLength(2);
-    expect(elements[0]).toHaveTextContent("Keyboard Viewer");
-    expect(elements[1]).toHaveTextContent("Keyboard Text");
+test("keyboard tester shows footer", () => {
+  render(<KeyboardTester />);
+  
+  const footer = screen.getByText(/Keyboard layouts supported/);
+  
+  expect(footer).toBeInTheDocument();
 });
