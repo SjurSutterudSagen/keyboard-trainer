@@ -36,10 +36,18 @@ export interface PressedKey {
   timestamp: number;
 }
 
+export interface KeymapDefinition {
+  id: string;
+  name: string;
+  description: string;
+  mapping: Record<string, { key: string; label: string; shiftKey?: string; shiftLabel?: string }>;
+}
+
 export interface KeyboardState {
   pressedKeys: Set<string>;
   keyHistory: PressedKey[];
   currentLayout: string;
+  currentKeymap: string;
 }
 
 export type KeyboardLayoutType = 
@@ -50,4 +58,6 @@ export type KeyboardLayoutType =
   | 'ergodox'
   | 'corne'
   | 'lily58'
-  | 'kyria';
+  | 'kyria'
+  | 'glove80'
+  ;

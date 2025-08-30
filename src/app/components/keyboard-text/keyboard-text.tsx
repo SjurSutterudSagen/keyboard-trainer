@@ -3,11 +3,14 @@
 import { useState, useRef, useEffect } from 'react';
 
 import { useKeyboardInput } from '../../../hooks/useKeyboardInput';
+import { getKeymapById } from '../../../data/keymaps';
 
 export function KeyboardText() {
   const { keyboardState, clearHistory } = useKeyboardInput();
   const [typedText, setTypedText] = useState('');
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  const currentKeymap = getKeymapById(keyboardState.currentKeymap);
 
   const handleTextChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setTypedText(e.target.value);
@@ -45,7 +48,14 @@ export function KeyboardText() {
         {/* Text Input Area */}
         <div>
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-lg font-semibold text-gray-800">Typing Area</h3>
+            <div className="flex items-center gap-3">
+              <h3 className="text-lg font-semibold text-gray-800">Typing Area</h3>
+              {currentKeymap && (
+                <span className="text-sm text-blue-600 bg-blue-50 px-2 py-1 rounded">
+                  {currentKeymap.name}
+                </span>
+              )}
+            </div>
             <button
               onClick={handleClearText}
               className="px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-md transition-colors"

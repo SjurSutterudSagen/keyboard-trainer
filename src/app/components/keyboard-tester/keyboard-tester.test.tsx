@@ -10,8 +10,10 @@ vi.mock('../../../hooks/useKeyboardInput', () => ({
       pressedKeys: new Set(),
       keyHistory: [],
       currentLayout: 'standard',
+      currentKeymap: 'qwerty',
     },
     setCurrentLayout: vi.fn(),
+    setCurrentKeymap: vi.fn(),
     clearHistory: vi.fn(),
   }),
 }));
@@ -44,7 +46,7 @@ test("keyboard tester shows description", () => {
 test("keyboard tester shows footer", () => {
   render(<KeyboardTester />);
   
-  const footer = screen.getByText(/Keyboard layouts supported/);
+  const footer = screen.getByText(/Keymaps: QWERTY, Dvorak, Colemak, Workman/);
   
   expect(footer).toBeInTheDocument();
 });

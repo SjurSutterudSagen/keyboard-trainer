@@ -10,8 +10,10 @@ vi.mock('../../../hooks/useKeyboardInput', () => ({
       pressedKeys: new Set(),
       keyHistory: [],
       currentLayout: 'standard',
+      currentKeymap: 'qwerty',
     },
     setCurrentLayout: vi.fn(),
+    setCurrentKeymap: vi.fn(),
     clearHistory: vi.fn(),
   }),
 }));

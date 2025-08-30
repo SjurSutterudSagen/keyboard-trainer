@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 
 import { Key } from "./key";
-import { KeyDefinition } from "../../../types/keyboard";
+import { KeyDefinition, KeymapDefinition } from "../../../types/keyboard";
 
 const mockKeyDef: KeyDefinition = {
   code: 'KeyA',
@@ -9,6 +9,15 @@ const mockKeyDef: KeyDefinition = {
   label: 'A',
   position: { row: 0, col: 0, x: 0, y: 0 },
   isAlphanumeric: true,
+};
+
+const mockKeymap: KeymapDefinition = {
+  id: 'test',
+  name: 'Test',
+  description: 'Test keymap',
+  mapping: {
+    'KeyA': { key: 'z', label: 'Z', shiftKey: 'Z', shiftLabel: 'Z' },
+  },
 };
 
 test("key renders correctly", () => {
@@ -49,4 +58,20 @@ test("modifier key has special styling", () => {
   const key = screen.getByText("Ctrl").parentElement;
   
   expect(key).toHaveClass("bg-blue-50");
+});
+
+test("key applies keymap correctly", () => {
+  render(<Key keyDef={mockKeyDef} isPressed={false} keymap={mockKeymap} />);
+
+  const key = screen.getByText("Z"); // Should show Z instead of A due to keymap
+
+  expect(key).toBeInTheDocument();
+});
+
+test("key applies keymap with shift correctly", () => {
+  render(<Key keyDef={mockKeyDef} isPressed={false} keymap={mockKeymap} isShiftPressed={true} />);
+
+  const key = screen.getByText("Z"); // Should show shift version (Z in this case)
+  
+  expect(key).toBeInTheDocument();
 });

@@ -7,6 +7,7 @@ export const useKeyboardInput = () => {
     pressedKeys: new Set<string>(),
     keyHistory: [],
     currentLayout: 'standard',
+    currentKeymap: 'qwerty',
   });
 
   const handleKeyDown = useCallback((event: KeyboardEvent) => {
@@ -17,9 +18,11 @@ export const useKeyboardInput = () => {
 
     setKeyboardState(prev => {
       const newPressedKeys = new Set(prev.pressedKeys);
+
       newPressedKeys.add(event.code);
       
       const newKeyHistory = [...prev.keyHistory];
+
       // Only add to history if it's not already the most recent key
       if (newKeyHistory.length === 0 || newKeyHistory[newKeyHistory.length - 1].code !== event.code) {
         newKeyHistory.push({
@@ -44,6 +47,7 @@ export const useKeyboardInput = () => {
   const handleKeyUp = useCallback((event: KeyboardEvent) => {
     setKeyboardState(prev => {
       const newPressedKeys = new Set(prev.pressedKeys);
+      
       newPressedKeys.delete(event.code);
       
       return {
@@ -57,6 +61,13 @@ export const useKeyboardInput = () => {
     setKeyboardState(prev => ({
       ...prev,
       currentLayout: layoutId,
+    }));
+  }, []);
+
+  const setCurrentKeymap = useCallback((keymapId: string) => {
+    setKeyboardState(prev => ({
+      ...prev,
+      currentKeymap: keymapId,
     }));
   }, []);
 
@@ -89,12 +100,14 @@ export const useKeyboardInput = () => {
     };
 
     window.addEventListener('blur', handleBlur);
+    
     return () => window.removeEventListener('blur', handleBlur);
   }, []);
 
   return {
     keyboardState,
     setCurrentLayout,
+    setCurrentKeymap,
     clearHistory,
   };
 };

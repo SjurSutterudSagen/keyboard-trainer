@@ -4,16 +4,25 @@ import { useState } from 'react';
 
 import { useKeyboardInput } from '../../../hooks/useKeyboardInput';
 import { keyboardLayouts, getLayoutById } from '../../../data/keyboard-layouts';
+import { keymaps, getKeymapById } from '../../../data/keymaps';
 import { Key } from '../key/key';
 
 export function KeyboardViewer() {
-  const { keyboardState, setCurrentLayout } = useKeyboardInput();
+  const { keyboardState, setCurrentLayout, setCurrentKeymap } = useKeyboardInput();
   const [scale, setScale] = useState(1);
   
   const currentLayout = getLayoutById(keyboardState.currentLayout) || keyboardLayouts[0];
+  const currentKeymap = getKeymapById(keyboardState.currentKeymap) || keymaps[0];
+  
+  // Check if shift is currently pressed
+  const isShiftPressed = keyboardState.pressedKeys.has('ShiftLeft') || keyboardState.pressedKeys.has('ShiftRight');
 
   const handleLayoutChange = (layoutId: string) => {
     setCurrentLayout(layoutId);
+  };
+
+  const handleKeymapChange = (keymapId: string) => {
+    setCurrentKeymap(keymapId);
   };
 
   const handleScaleChange = (newScale: number) => {
@@ -37,6 +46,24 @@ export function KeyboardViewer() {
             {keyboardLayouts.map((layout) => (
               <option key={layout.id} value={layout.id}>
                 {layout.name}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="flex items-center gap-2">
+          <label htmlFor="keymap-select" className="text-sm font-medium text-gray-700">
+            Keymap:
+          </label>
+          <select
+            id="keymap-select"
+            value={keyboardState.currentKeymap}
+            onChange={(e) => handleKeymapChange(e.target.value)}
+            className="px-3 py-1 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            {keymaps.map((keymap) => (
+              <option key={keymap.id} value={keymap.id}>
+                {keymap.name}
               </option>
             ))}
           </select>
@@ -66,8 +93,14 @@ export function KeyboardViewer() {
 
       {/* Layout Info */}
       <div className="mb-4">
-        <h3 className="text-lg font-semibold text-gray-800">{currentLayout.name}</h3>
+        <div className="flex items-center gap-4 mb-2">
+          <h3 className="text-lg font-semibold text-gray-800">{currentLayout.name}</h3>
+          <span className="text-sm text-blue-600 bg-blue-50 px-2 py-1 rounded">
+            {currentKeymap.name} keymap
+          </span>
+        </div>
         <p className="text-sm text-gray-600">{currentLayout.description}</p>
+        <p className="text-sm text-gray-500">{currentKeymap.description}</p>
         {currentLayout.split && (
           <div className="flex gap-4 mt-2 text-xs">
             <span className="flex items-center gap-1">
@@ -104,6 +137,8 @@ export function KeyboardViewer() {
               key={keyDef.code}
               keyDef={keyDef}
               isPressed={keyboardState.pressedKeys.has(keyDef.code)}
+              isShiftPressed={isShiftPressed}
+              keymap={currentKeymap}
               scale={scale}
             />
           ))}
@@ -114,7 +149,7 @@ export function KeyboardViewer() {
       <div className="mt-4 text-sm text-gray-600">
         <p>
           <strong>Instructions:</strong> Click on this area and start typing to see keys light up on the keyboard viewer above.
-          The viewer supports different keyboard layouts including split keyboards and thumb clusters.
+          The viewer supports different keyboard layouts and keymaps. Try switching between keymaps to see how the key labels change!
         </p>
       </div>
     </div>

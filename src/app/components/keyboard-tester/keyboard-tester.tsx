@@ -25,7 +25,8 @@ export function KeyboardTester() {
                 
                 <footer className="mt-12 text-center text-sm text-gray-500">
                     <p>
-                        Keyboard layouts supported: Standard QWERTY, Corne (3x6+3), ErgoDox
+                        Keyboard layouts: Standard QWERTY, Corne (3x6+3), ErgoDox • 
+                        Keymaps: QWERTY, Dvorak, Colemak, Workman
                     </p>
                 </footer>
             </div>
