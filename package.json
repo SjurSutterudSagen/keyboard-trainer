@@ -1,10 +1,13 @@
 {
-  "name": "keyboard-Trainer",
+  "name": "keyboard-trainer",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
+    "clean": "rm -rf .next next-env.d.ts node_modules playwright-report test-results zmk",
+    "clone-boards": "sh ./scripts/clone-zmk.sh",
     "dev": "next dev",
+    "generate-layouts-keymaps": "sh ./scripts/generate-layouts-keymaps-zmk.sh",
     "lint": "eslint",
     "start": "next start",
     "test": "vitest",
