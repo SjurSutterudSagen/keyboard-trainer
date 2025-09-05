@@ -1,0 +1,9 @@
+{
+    "id": "qaz",
+    "name": "QAZ",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/qaz",
+    "layouts": [],
+    "keymaps": []
+}

@@ -1,0 +1,9 @@
+{
+    "id": "bat43",
+    "name": "BAT43",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/bat43",
+    "layouts": [],
+    "keymaps": []
+}

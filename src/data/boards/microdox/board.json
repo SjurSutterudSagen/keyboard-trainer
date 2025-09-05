@@ -1,0 +1,9 @@
+{
+    "id": "microdox",
+    "name": "Microdox",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/microdox",
+    "layouts": [],
+    "keymaps": []
+}

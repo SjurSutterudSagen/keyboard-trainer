@@ -1,0 +1,9 @@
+{
+    "id": "redox",
+    "name": "Redox",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/redox",
+    "layouts": [],
+    "keymaps": []
+}

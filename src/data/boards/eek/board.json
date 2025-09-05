@@ -1,0 +1,9 @@
+{
+    "id": "eek",
+    "name": "eek!",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/eek",
+    "layouts": [],
+    "keymaps": []
+}

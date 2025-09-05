@@ -1,0 +1,9 @@
+{
+    "id": "fourier",
+    "name": "Fourier Rev. 1",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/fourier",
+    "layouts": [],
+    "keymaps": []
+}

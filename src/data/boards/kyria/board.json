@@ -1,0 +1,9 @@
+{
+    "id": "kyria",
+    "name": "Kyria",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/kyria",
+    "layouts": [],
+    "keymaps": []
+}

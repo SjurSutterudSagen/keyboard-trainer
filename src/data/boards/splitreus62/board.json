@@ -1,0 +1,9 @@
+{
+    "id": "splitreus62",
+    "name": "Splitreus62",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/splitreus62",
+    "layouts": [],
+    "keymaps": []
+}

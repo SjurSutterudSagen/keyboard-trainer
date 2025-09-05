@@ -1,0 +1,9 @@
+{
+    "id": "chalice",
+    "name": "Chalice",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/chalice",
+    "layouts": [],
+    "keymaps": []
+}

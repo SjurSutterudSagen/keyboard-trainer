@@ -1,0 +1,9 @@
+{
+    "id": "boardsource3x4",
+    "name": "Boardsource 3x4 Macropad",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/boardsource3x4",
+    "layouts": [],
+    "keymaps": []
+}

@@ -1,0 +1,9 @@
+{
+    "id": "tester_rpi_pico",
+    "name": "TesterRpiPico",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/tester_rpi_pico",
+    "layouts": [],
+    "keymaps": []
+}

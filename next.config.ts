@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const cspHeader = `
     default-src 'self';
@@ -14,20 +14,20 @@ const cspHeader = `
 `;
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          {
-            key: 'Content-Security-Policy',
-            value: cspHeader.replace(/\n/g, ''),
-          },
-        ],
-      },
-    ]
-  },
+    /* config options here */
+    async headers() {
+        return [
+            {
+                source: '/(.*)',
+                headers: [
+                    {
+                        key: 'Content-Security-Policy',
+                        value: cspHeader.replace(/\n/g, ''),
+                    },
+                ],
+            },
+        ];
+    },
 };
 
 export default nextConfig;

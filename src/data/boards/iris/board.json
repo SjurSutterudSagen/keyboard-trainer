@@ -1,0 +1,9 @@
+{
+    "id": "iris",
+    "name": "Iris",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/iris",
+    "layouts": [],
+    "keymaps": []
+}

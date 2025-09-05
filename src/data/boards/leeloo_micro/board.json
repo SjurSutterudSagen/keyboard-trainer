@@ -1,0 +1,9 @@
+{
+    "id": "leeloo_micro",
+    "name": "Leeloo-Micro",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/leeloo_micro",
+    "layouts": [],
+    "keymaps": []
+}

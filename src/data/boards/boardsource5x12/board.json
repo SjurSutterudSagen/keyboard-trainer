@@ -1,0 +1,9 @@
+{
+    "id": "boardsource5x12",
+    "name": "Boardsource 5x12",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/boardsource5x12",
+    "layouts": [],
+    "keymaps": []
+}

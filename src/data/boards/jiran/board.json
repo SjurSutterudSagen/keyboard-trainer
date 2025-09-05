@@ -1,0 +1,9 @@
+{
+    "id": "jiran",
+    "name": "Jiran",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/jiran",
+    "layouts": [],
+    "keymaps": []
+}

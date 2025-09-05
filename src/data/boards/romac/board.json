@@ -1,0 +1,9 @@
+{
+    "id": "romac",
+    "name": "Romac Macropad",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/romac",
+    "layouts": [],
+    "keymaps": []
+}

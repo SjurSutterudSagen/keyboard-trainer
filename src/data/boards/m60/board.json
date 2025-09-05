@@ -1,0 +1,9 @@
+{
+    "id": "m60",
+    "name": "MakerDiary m60",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/m60",
+    "layouts": [],
+    "keymaps": []
+}

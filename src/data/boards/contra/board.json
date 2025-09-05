@@ -1,0 +1,9 @@
+{
+    "id": "contra",
+    "name": "Contra",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/contra",
+    "layouts": [],
+    "keymaps": []
+}

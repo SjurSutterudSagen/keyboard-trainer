@@ -1,0 +1,9 @@
+{
+    "id": "zodiark",
+    "name": "Zodiark",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/zodiark",
+    "layouts": [],
+    "keymaps": []
+}

@@ -1,0 +1,9 @@
+{
+    "id": "nibble",
+    "name": "Nibble",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/nibble",
+    "layouts": [],
+    "keymaps": []
+}

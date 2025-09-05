@@ -1,0 +1,9 @@
+{
+    "id": "eternal_keypad",
+    "name": "Eternal Keypad",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/eternal_keypad",
+    "layouts": [],
+    "keymaps": []
+}

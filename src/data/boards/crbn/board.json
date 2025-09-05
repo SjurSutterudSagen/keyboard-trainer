@@ -1,0 +1,9 @@
+{
+    "id": "crbn",
+    "name": "CRBN Featherlight",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/crbn",
+    "layouts": [],
+    "keymaps": []
+}

@@ -1,0 +1,9 @@
+{
+    "id": "proton_c",
+    "name": "QMK Proton-C",
+    "type": "board",
+    "arch": "arm",
+    "sourceDir": "zmk/app/boards/arm/proton_c",
+    "layouts": [],
+    "keymaps": []
+}

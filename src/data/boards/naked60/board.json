@@ -1,0 +1,9 @@
+{
+    "id": "naked60",
+    "name": "Naked60",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/naked60",
+    "layouts": [],
+    "keymaps": []
+}

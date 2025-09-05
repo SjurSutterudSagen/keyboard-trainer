@@ -1,0 +1,9 @@
+{
+    "id": "elephant42",
+    "name": "Elephant42",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/elephant42",
+    "layouts": [],
+    "keymaps": []
+}

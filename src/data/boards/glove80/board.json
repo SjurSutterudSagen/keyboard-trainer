@@ -1,0 +1,9 @@
+{
+    "id": "glove80",
+    "name": "Glove80",
+    "type": "board",
+    "arch": "arm",
+    "sourceDir": "zmk/app/boards/arm/glove80",
+    "layouts": [],
+    "keymaps": []
+}

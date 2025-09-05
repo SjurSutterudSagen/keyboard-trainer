@@ -1,0 +1,9 @@
+{
+    "id": "cradio",
+    "name": "Cradio/Sweep",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/cradio",
+    "layouts": [],
+    "keymaps": []
+}

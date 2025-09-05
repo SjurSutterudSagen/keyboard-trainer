@@ -1,0 +1,9 @@
+{
+    "id": "lily58",
+    "name": "Lily58",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/lily58",
+    "layouts": [],
+    "keymaps": []
+}

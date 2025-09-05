@@ -1,0 +1,9 @@
+{
+    "id": "splitkb_aurora_sofle",
+    "name": "splitkb.com Aurora Sofle",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/splitkb_aurora_sofle",
+    "layouts": [],
+    "keymaps": []
+}

@@ -1,0 +1,33 @@
+{
+    "id": "tester_xiao_tester_xiao-layouts",
+    "name": "TesterXiao tester_xiao-layouts",
+    "description": "Physical layout for TesterXiao keyboard (tester_xiao-layouts variant)",
+    "board": "tester_xiao",
+    "split": true,
+    "width": 1400,
+    "height": 500,
+    "keyPositions": [
+        { "width": 100, "height": 100, "x": 0, "y": 0 },
+        { "width": 100, "height": 100, "x": 0, "y": 100 },
+        { "width": 100, "height": 100, "x": 0, "y": 200 },
+        { "width": 100, "height": 100, "x": 0, "y": 300 },
+        { "width": 100, "height": 100, "x": 0, "y": 400 },
+        { "width": 100, "height": 100, "x": 0, "y": 500 },
+        { "width": 100, "height": 100, "x": 0, "y": 600 },
+        { "width": 100, "height": 100, "x": 600, "y": 600 },
+        { "width": 100, "height": 100, "x": 600, "y": 500 },
+        { "width": 100, "height": 100, "x": 600, "y": 400 },
+        { "width": 100, "height": 100, "x": 600, "y": 300 },
+        { "width": 100, "height": 100, "x": 0, "y": 0 },
+        { "width": 100, "height": 100, "x": 100, "y": 0 },
+        { "width": 100, "height": 100, "x": 200, "y": 0 },
+        { "width": 100, "height": 100, "x": 300, "y": 0 },
+        { "width": 100, "height": 100, "x": 400, "y": 0 },
+        { "width": 100, "height": 100, "x": 500, "y": 0 },
+        { "width": 100, "height": 100, "x": 600, "y": 0 },
+        { "width": 100, "height": 100, "x": 700, "y": 0 },
+        { "width": 100, "height": 100, "x": 800, "y": 0 },
+        { "width": 100, "height": 100, "x": 900, "y": 0 },
+        { "width": 100, "height": 100, "x": 1000, "y": 0 }
+    ]
+}

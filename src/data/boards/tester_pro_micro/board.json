@@ -1,0 +1,9 @@
+{
+    "id": "tester_pro_micro",
+    "name": "TesterProMicro",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/tester_pro_micro",
+    "layouts": [],
+    "keymaps": []
+}

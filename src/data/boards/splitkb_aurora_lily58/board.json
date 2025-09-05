@@ -1,0 +1,9 @@
+{
+    "id": "splitkb_aurora_lily58",
+    "name": "splitkb.com Aurora Lily58",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/splitkb_aurora_lily58",
+    "layouts": [],
+    "keymaps": []
+}

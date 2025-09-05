@@ -1,0 +1,9 @@
+{
+    "id": "knob_goblin",
+    "name": "Knob Goblin",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/knob_goblin",
+    "layouts": [],
+    "keymaps": []
+}

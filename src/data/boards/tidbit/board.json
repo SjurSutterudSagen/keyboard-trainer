@@ -1,0 +1,9 @@
+{
+    "id": "tidbit",
+    "name": "Tidbit Numpad",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/tidbit",
+    "layouts": [],
+    "keymaps": []
+}

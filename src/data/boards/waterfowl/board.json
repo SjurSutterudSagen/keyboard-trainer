@@ -1,0 +1,9 @@
+{
+    "id": "waterfowl",
+    "name": "Waterfowl",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/waterfowl",
+    "layouts": [],
+    "keymaps": []
+}

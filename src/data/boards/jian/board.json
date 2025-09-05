@@ -1,0 +1,9 @@
+{
+    "id": "jian",
+    "name": "Jian",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/jian",
+    "layouts": [],
+    "keymaps": []
+}

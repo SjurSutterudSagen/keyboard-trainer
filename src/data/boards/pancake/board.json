@@ -1,0 +1,9 @@
+{
+    "id": "pancake",
+    "name": "Pancake",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/pancake",
+    "layouts": [],
+    "keymaps": []
+}

@@ -1,0 +1,9 @@
+{
+    "id": "jorne",
+    "name": "Jorne",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/jorne",
+    "layouts": [],
+    "keymaps": []
+}

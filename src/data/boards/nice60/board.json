@@ -1,0 +1,9 @@
+{
+    "id": "nice60",
+    "name": "nice!60",
+    "type": "board",
+    "arch": "arm",
+    "sourceDir": "zmk/app/boards/arm/nice60",
+    "layouts": [],
+    "keymaps": []
+}

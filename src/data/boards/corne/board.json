@@ -1,0 +1,9 @@
+{
+    "id": "corne",
+    "name": "Corne",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/corne",
+    "layouts": [],
+    "keymaps": []
+}

@@ -1,0 +1,9 @@
+{
+    "id": "splitkb_aurora_corne",
+    "name": "splitkb.com Aurora Corne",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/splitkb_aurora_corne",
+    "layouts": [],
+    "keymaps": []
+}

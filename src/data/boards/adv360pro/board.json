@@ -1,0 +1,9 @@
+{
+    "id": "adv360pro",
+    "name": "Advantage 360 Pro",
+    "type": "board",
+    "arch": "arm",
+    "sourceDir": "zmk/app/boards/arm/adv360pro",
+    "layouts": [],
+    "keymaps": []
+}

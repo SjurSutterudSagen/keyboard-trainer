@@ -1,0 +1,9 @@
+{
+    "id": "hummingbird",
+    "name": "Hummingbird",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/hummingbird",
+    "layouts": [],
+    "keymaps": []
+}

@@ -1,0 +1,9 @@
+{
+    "id": "snap",
+    "name": "SNAP",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/snap",
+    "layouts": [],
+    "keymaps": []
+}

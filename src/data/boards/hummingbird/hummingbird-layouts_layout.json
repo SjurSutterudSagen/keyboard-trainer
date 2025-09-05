@@ -1,0 +1,191 @@
+{
+    "id": "hummingbird_hummingbird-layouts",
+    "name": "Hummingbird hummingbird-layouts",
+    "description": "Physical layout for Hummingbird keyboard (hummingbird-layouts variant)",
+    "board": "hummingbird",
+    "split": true,
+    "width": 1400,
+    "height": 500,
+    "keyPositions": [
+        {
+            "width": 100,
+            "height": 100,
+            "x": 0,
+            "y": 75
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 100,
+            "y": 25
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 200,
+            "y": 0
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 300,
+            "y": 25
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 400,
+            "y": 75
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 600,
+            "y": 75
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 700,
+            "y": 25
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 800,
+            "y": 0
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 900,
+            "y": 25
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 1000,
+            "y": 75
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 0,
+            "y": 175
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 100,
+            "y": 125
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 200,
+            "y": 100
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 300,
+            "y": 125
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 400,
+            "y": 175
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 600,
+            "y": 175
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 700,
+            "y": 125
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 800,
+            "y": 100
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 900,
+            "y": 125
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 1000,
+            "y": 175
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 100,
+            "y": 225
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 200,
+            "y": 200
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 300,
+            "y": 225
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 700,
+            "y": 225
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 800,
+            "y": 200
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 900,
+            "y": 225
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 325,
+            "y": 350
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 425,
+            "y": 375
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 575,
+            "y": 375
+        },
+        {
+            "width": 100,
+            "height": 100,
+            "x": 675,
+            "y": 350
+        }
+    ]
+}

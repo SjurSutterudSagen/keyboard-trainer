@@ -1,0 +1,9 @@
+{
+    "id": "sofle",
+    "name": "Sofle",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/sofle",
+    "layouts": [],
+    "keymaps": []
+}

@@ -1,0 +1,9 @@
+{
+    "id": "helix",
+    "name": "Helix",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/helix",
+    "layouts": [],
+    "keymaps": []
+}

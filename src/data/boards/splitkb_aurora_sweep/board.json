@@ -1,0 +1,9 @@
+{
+    "id": "splitkb_aurora_sweep",
+    "name": "splitkb.com Aurora Sweep",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/splitkb_aurora_sweep",
+    "layouts": [],
+    "keymaps": []
+}

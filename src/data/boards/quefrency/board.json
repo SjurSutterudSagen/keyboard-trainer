@@ -1,0 +1,9 @@
+{
+    "id": "quefrency",
+    "name": "Quefrency Rev. 1",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/quefrency",
+    "layouts": [],
+    "keymaps": []
+}

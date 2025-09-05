@@ -1,0 +1,9 @@
+{
+    "id": "tester_xiao",
+    "name": "TesterXiao",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/tester_xiao",
+    "layouts": [],
+    "keymaps": []
+}

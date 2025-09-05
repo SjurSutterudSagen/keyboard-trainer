@@ -1,0 +1,9 @@
+{
+    "id": "ergodash",
+    "name": "Ergodash",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/ergodash",
+    "layouts": [],
+    "keymaps": []
+}

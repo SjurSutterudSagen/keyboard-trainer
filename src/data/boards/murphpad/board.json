@@ -1,0 +1,9 @@
+{
+    "id": "murphpad",
+    "name": "MurphPad",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/murphpad",
+    "layouts": [],
+    "keymaps": []
+}

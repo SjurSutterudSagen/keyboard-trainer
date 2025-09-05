@@ -1,0 +1,9 @@
+{
+    "id": "a_dux",
+    "name": "A. Dux",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/a_dux",
+    "layouts": [],
+    "keymaps": []
+}

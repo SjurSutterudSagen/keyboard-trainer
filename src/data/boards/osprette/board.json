@@ -1,0 +1,9 @@
+{
+    "id": "osprette",
+    "name": "Osprette",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/osprette",
+    "layouts": [],
+    "keymaps": []
+}

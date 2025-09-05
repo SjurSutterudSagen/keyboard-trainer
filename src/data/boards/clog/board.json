@@ -1,0 +1,9 @@
+{
+    "id": "clog",
+    "name": "Clog",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/clog",
+    "layouts": [],
+    "keymaps": []
+}

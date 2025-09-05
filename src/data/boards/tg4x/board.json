@@ -1,0 +1,9 @@
+{
+    "id": "tg4x",
+    "name": "TG4x",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/tg4x",
+    "layouts": [],
+    "keymaps": []
+}

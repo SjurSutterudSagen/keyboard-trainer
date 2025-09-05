@@ -1,0 +1,9 @@
+{
+    "id": "reviung34",
+    "name": "REVIUNG34",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/reviung34",
+    "layouts": [],
+    "keymaps": []
+}

@@ -1,0 +1,9 @@
+{
+    "id": "two_percent_milk",
+    "name": "2% Milk",
+    "type": "shield",
+    "arch": "",
+    "sourceDir": "zmk/app/boards/shields/two_percent_milk",
+    "layouts": [],
+    "keymaps": []
+}

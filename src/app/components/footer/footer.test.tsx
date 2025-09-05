@@ -1,12 +1,12 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen } from '@testing-library/react';
 
-import { Footer } from "./footer";
+import { Footer } from './footer';
 
-test("footer renders correctly", () => {
+test('footer renders correctly', () => {
     render(<Footer />);
 
     const footer = screen.getByRole('contentinfo');
 
-   expect(footer).toBeDefined();
-   expect(footer).toHaveTextContent("Footer");
+    expect(footer).toBeDefined();
+    expect(footer).toHaveTextContent('Footer');
 });
