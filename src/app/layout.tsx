@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Keyboard Tester",
-  description: "A simple keyboard tester application",
+  title: "Keyboard Trainer",
+  description: "A simple keyboard Trainer application",
 };
 
 export default function RootLayout({

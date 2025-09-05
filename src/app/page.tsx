@@ -1,4 +1,4 @@
-import { KeyboardTester } from "@/app/components/keyboard-tester/keyboard-tester";
+import { KeyboardTrainer } from "@/app/components/keyboard-trainer/keyboard-trainer";
 import { Footer } from "@/app/components/footer/footer";
 import { Header } from "./components/header/header";
 
@@ -8,7 +8,7 @@ export default function Home() {
       <Header />
 
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <KeyboardTester />
+        <KeyboardTrainer />
       </main>
       
       <Footer />

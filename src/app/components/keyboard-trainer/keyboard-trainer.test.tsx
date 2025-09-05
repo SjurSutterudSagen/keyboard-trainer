@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { vi } from 'vitest';
 
-import { KeyboardTester } from "./keyboard-tester";
+import { KeyboardTrainer } from "./keyboard-trainer";
 
 // Mock the hook
 vi.mock('../../../hooks/useKeyboardInput', () => ({
@@ -18,33 +18,33 @@ vi.mock('../../../hooks/useKeyboardInput', () => ({
   }),
 }));
 
-test("keyboard tester renders correctly", () => {
-  render(<KeyboardTester />);
+test("keyboard Trainer renders correctly", () => {
+  render(<KeyboardTrainer />);
 
   // Check that the main title is rendered  
-  const title = screen.getByText("Keyboard Tester");
+  const title = screen.getByText("Keyboard Trainer");
   
   expect(title).toBeDefined();
   expect(title).toBeInTheDocument();
 });
 
-test("keyboard tester renders both child components", () => {
-  render(<KeyboardTester />);
+test("keyboard Trainer renders both child components", () => {
+  render(<KeyboardTrainer />);
   
   expect(screen.getByRole("heading", { name: "Standard QWERTY" })).toBeInTheDocument(); // From KeyboardViewer
   expect(screen.getByRole("heading", { name: "Typing Area" })).toBeInTheDocument(); // From KeyboardText
 });
 
-test("keyboard tester shows description", () => {
-  render(<KeyboardTester />);
+test("keyboard Trainer shows description", () => {
+  render(<KeyboardTrainer />);
   
-  const description = screen.getByText(/Test your keyboard with visual feedback/);
+  const description = screen.getByText(/Learn touch typing with an interactive keyboard layout visualizer/);
   
   expect(description).toBeInTheDocument();
 });
 
-test("keyboard tester shows footer", () => {
-  render(<KeyboardTester />);
+test("keyboard Trainer shows footer", () => {
+  render(<KeyboardTrainer />);
   
   const footer = screen.getByText(/Keymaps: QWERTY, Dvorak, Colemak, Workman/);
   
