@@ -2,7 +2,7 @@
 
 A modern web application for improving typing skills with support for various keyboard layouts and ergonomic keyboards.
 
-Made because I needed a project to practice using my Ergonomic Split Keyboard on, and since I also wanted to pratice and
+Made because I needed a project to practice using my Ergonomic Split Keyboard on, and since I also wanted to practice and
 use AI for more complex tasks.
 
 Still very much a work-in-progress.
