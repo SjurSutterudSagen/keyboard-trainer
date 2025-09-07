@@ -6,9 +6,9 @@ export default defineConfig({
     plugins: [
         tsconfigPaths({
             ignoreConfigErrors: true,
-            projects: ['./tsconfig.json']
+            projects: ['./tsconfig.json'],
         }),
-        react()
+        react(),
     ],
     test: {
         environment: 'jsdom',
